@@ -13,13 +13,23 @@ export default function Page() {
         alt="Mountains and forests with two cabins"
       />
 
-      <div className="relative z-10 text-center">
-        <h1 className="text-8xl text-primary-50 mb-10 tracking-tight font-normal">
+      <div className="relative text-center px-4">
+        <h1
+          className="text-primary-50 mb-6 sm:mb-8 md:mb-10 tracking-tight font-normal"
+          style={{
+            fontSize: "clamp(3rem, 8vw, 6rem)",
+            lineHeight: "1.1",
+          }}
+        >
           Beyond Luxury, Beyond Imagination
         </h1>
         <Link
           href="/cabins"
-          className="bg-accent-500 px-8 py-6 text-primary-800 text-lg font-semibold hover:bg-accent-600 transition-all"
+          className="bg-accent-500 text-primary-800 font-semibold hover:bg-accent-600 transition-all inline-block"
+          style={{
+            fontSize: "clamp(1rem, 2.5vw, 1.125rem)",
+            padding: "clamp(0.75rem, 2vw, 1.5rem) clamp(1rem, 3vw, 2rem)",
+          }}
         >
           Explore luxury cabins
         </Link>

@@ -1,9 +1,8 @@
 import Header from "./_components/Header";
-import Logo from "./_components/Logo";
-import Navigation from "./_components/Navigation";
 import "@/app/_styles/globals.css";
 import { Josefin_Sans } from "next/font/google";
 import { ReservationProvider } from "./_components/ReservationContext";
+import { Analytics } from "@vercel/analytics/next";
 
 const josephine = Josefin_Sans({
   subsets: ["latin"],
@@ -31,6 +30,7 @@ export default function RootLayout({ children }) {
             <ReservationProvider>{children}</ReservationProvider>
           </main>
         </div>
+        <Analytics />
       </body>
     </html>
   );
